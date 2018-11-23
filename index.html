@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/xhtml" data-desktop="1" data-mobile="2" data-landscape="3">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GOODLUCK</title>
+    <meta name="theme-color" content="#0c2124"> <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0c2124"> <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <link rel="stylesheet" href="frontend/styles/hxt.min.css">
+<body>
+
+<div class="transition-wrapper"></div>
+<div class="kaspersky-app">
+    <div class="modal modal_static">
+        <!--<div class="modal__content">
+            <div class="modal__ui modal-message pattern pattern_lines-4 modal__ui_visible" data-no-close="">
+                <div class="pattern__content"><h2 class="modal-message__title" data-localization="index.no_webgl"></h2>
+                    <p class="modal-message__body"></p></div>
+            </div>
+        </div>-->
+    </div>
+    <div class="main-container">
+        <script id="earth-popup" type="text/x-handlebars-template">
+            <div class="earth-popup">
+                {{#each this}}
+                <div class="earth-popup__item  earth-popup__item_{{@index}}">
+                    <div class="earth-popup__item-shadow"></div>
+                    <div class="earth-popup__preview-hexagon">
+                        <div class="hexagon  earth-popup__preview">
+                            <div class="hexagon__in1">
+                                <div class="hexagon__in2">
+                                    <div class="earth-popup__hover">
+                                        <div class="hexagon__image" id="hexagon__background"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="earth-popup__flag-container">
+                        <div class="earth-popup__flag">
+                            <svg version="1.0" class="hexagon-svg" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="89" height="77" viewBox="0 0 89 77" xml:space="preserve">
+<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M88.5,38.5l-22,38h-44l-22-38l22-38h44L88.5,38.5z"/>
+</svg>
+
+
+                            <div class="earth-popup__flag-hexagon">
+                                <div class="hexagon">
+                                    <div class="hexagon__in1">
+                                        <div class="hexagon__in2">
+                                            <div class="hexagon__image" id="hexagon__image"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="earth-popup__info">
+                                <div class="earth-popup__city" id="earth-popup__city"></div>
+                                <div class="earth-popup__briefs-count">{{briefs}}<span class="earth_time"></span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {{/each}}
+            </div> </script>
+    </div>
+</div>
+<div class="welcome">
+    <div class="welcome__text welcome__text_{{index}}" data-localization="welcome" data-duration="{{duration}}">
+        <div>{{{text}}}</div>
+    </div>
+</div>
+
+<script src="frontend/scripts/assets.min.js"></script>
+<script src="frontend/scripts/Kaspersky.min.js"></script> <!-- THREEJS -->
+<script src="frontend/scripts/three.min.js"></script>
+<script src="frontend/scripts/hexasphere.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/eosjs@15.0.3/lib/eos.min.js"
+integrity="sha512-QX0dPq5pyX33coEuy5x1UqKHFDeveQYMp7Sz+qOUwRL9mol4QDvViU+QAjd+k6P7QjPjrDCoyhK1kz2GDxCP9A=="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/eosjs-ecc@4.0.4/lib/eosjs-ecc.min.js"
+    integrity="sha512-dYFDmK/d9r3/NCp6toLtfkwOjSMRBaEzaGAx1tfRItC0nsI0hVLERk05iNBQR7uDNI7ludYhcBI4vUiFHdjsTQ=="
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

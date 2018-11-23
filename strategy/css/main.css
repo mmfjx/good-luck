@@ -1,0 +1,209 @@
+			/*
+			 *整体样式声明
+			 **/
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #fff;
+				width: 150px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+				display: block;
+			}
+			
+			span {
+				display: block;
+				color: #00ed9b;
+				font-size: 26px;
+				margin-bottom: 30px;
+				padding-top: 60px;
+				letter-spacing: 2px;
+			}
+			
+			p {
+				color: #fff;
+				letter-spacing: 1px;
+				line-height: 30px;
+				width: 100%;
+				font-size: 14px;
+			}
+			
+			h4 {
+				margin-top: 20px;
+				color: #fff;
+				letter-spacing: 2px;
+				margin-bottom: 20px;
+			}
+			
+			body {
+				background: url(../images/background.png) fixed;
+				background-size: cover;
+				font-family: "微软雅黑";
+				overflow-x: hidden;
+			}
+			
+			input {
+				border: 0;
+				box-sizing: border-box;
+			}
+			
+			.container {
+				max-width: 1200px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.clearfix:before,
+			.clearfix:after {
+				content: "";
+				display: table;
+			}
+			
+			.clearfix:after {
+				clear: both;
+			}
+			
+			.clearfix {
+				*zoom: 1;
+			}
+			
+			.banner-content {
+				position: absolute;
+				left: 1000px;
+				top: 17px;
+			}
+			
+			.content {
+				max-width: 1200px;
+				width: 100%;
+				margin: 0 auto;
+				height: 100%;
+				position: relative;
+			}
+
+			/*.logo {
+				background: url(../images/logo.png);
+				width: 130px;
+				height: 63px;
+				position: absolute;
+				top: 40px;
+				left: 50px;
+				cursor: pointer;
+			}
+			
+			.movie {
+				width: 1200px;
+				height: 312px;
+				background: url(../images/movie.png) no-repeat;
+				background-size: 100%;
+				margin: 0 auto;
+				position: absolute;
+				top: 200px;
+				left: 50%;
+				margin-left: -600px;
+			}
+			
+			.btn {
+				width: 41px;
+				height: 48px;
+				background: url(../images/stop.png) no-repeat;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -20px;
+				margin-top: -24px;
+			}*/
+			
+			.text {
+				max-width: 1200px;
+				width: 100%;
+				background: url(../images/circle.png) no-repeat;
+				background-size: 90%;
+				background-position: 50% 2%;
+				padding-top: 350px;
+				margin-bottom: 100px;
+			}
+			
+			.circle {
+				display: block;
+				/*height: 400px;*/
+			}
+			
+			table {
+				color: #fff;
+				max-width: 800px;
+				width: 100%;
+				height: 100px;
+				margin: 0 auto;
+				text-align: center;
+				border: 1px solid #00ed9b;
+				border-collapse: collapse;
+				box-shadow: 5px 5px 5px rgba(0, 237, 155, 0.3);
+				
+			}
+			
+			/*.top {
+				height: 550px;
+			}
+			
+			.bottom {
+				width: 1200px;
+				height: 800px;
+				margin: 0 auto;
+				margin-top: 80px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}*/
+			
+			button {
+				background-color: #00ed9b;
+				border: 0;
+				border-radius: 5px;
+				margin: 20px 0;
+				transition: all 0.3s;
+			}
+			button:hover {
+				background: #fff;
+			}
+			button:hover a {
+				color: #00ED9B;
+			}
+			/*自定义滚动条*/
+			::-webkit-scrollbar {
+				width: 2px;
+				height: 10px;
+				background-color: #555;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				background-color: #00ed9b;
+			}
+			
+			
+			@media only screen and (min-width: 768px) and (max-width: 1024px) {
+				body {padding: 0 20px;}
+				span {font-size: 42px;}
+				h4 {font-size: 32px;}
+				p {font-size: 28px;line-height: 40px;}
+				a {width:260px;height: 80px;font-size: 30px;line-height: 80px;}
+				th,td {font-size: 34px;}
+				.text{background-position-y: 1%;padding-top: 300px;}
+			}
+			@media only screen and (max-width: 760px) {
+				body {padding: 0 20px;}
+				.text {background-position-y: 1%;padding-top: 150px;margin-bottom: 60px;}
+				span {font-size: 24px;}
+				h4 {font-size: 18px;}
+				p {font-size: 14px;line-height: 24px;}	
+			}

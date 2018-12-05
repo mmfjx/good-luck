@@ -1473,7 +1473,7 @@ var peppers;
     $.fn.earthPopupItem = function (action) {
         return this.each(function (index, el) {
             //console.log("args", arguments);
-            
+
             var $t = $(this);
             var itm = $t.data("earthPopupItem");
             console.log("earthPopupItem",action,itm);
